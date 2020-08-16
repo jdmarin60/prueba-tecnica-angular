@@ -1,0 +1,38 @@
+<div class="card border-primary m-2">
+    <div class="card-header">Productos</div>
+    <div class="card-body text-primary">
+      <h5 class="card-title">Lista Productos</h5>
+  
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Caracteristicas</th>
+            <th>Fecha Lanzamiento</th>
+            <th>Correo Fabricante</th>
+            <th>Pais Fabricación</th>
+            <th>Precio</th>
+            <th>Disponibles</th>
+            <th>Vendidos</th>
+            <th>Imagen</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let producto of productos">
+            <td> {{ producto.id }}</td>
+            <td> {{ producto.nombre }}</td>
+            <td> {{ producto.caracteristicas }}</td>
+            <td> {{ producto.fechaLanzamiento }}</td>
+            <td> {{ producto.correoFabricante }}</td>
+            <td> {{ producto.paisFabricacion }}</td>
+            <td> {{ producto.precio }}</td>
+            <td> {{ producto.disponibles }}</td>
+            <td> {{ producto.vendidos }}</td>
+            <td> {{ producto.imagen }}</td>
+          </tr>
+        </tbody>
+      </table>
+  
+    </div>
+  </div>

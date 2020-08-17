@@ -7,6 +7,14 @@ import { FooterComponent } from './footer/footer.component';
 import { RegistroComponent } from './registro/registro.component';
 import { ProductoComponent } from './producto/producto.component';
 import { ProductoService } from './producto/producto.service';
+import { RouterModule, Routes } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+
+const routes: Routes = [
+  {path:"", redirectTo:"/productos", pathMatch:"full"},
+  {path:"productos", component: ProductoComponent },
+  {path:"registros", component:RegistroComponent },
+];
 
 @NgModule({
   declarations: [
@@ -17,7 +25,9 @@ import { ProductoService } from './producto/producto.service';
     ProductoComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [
     ProductoService

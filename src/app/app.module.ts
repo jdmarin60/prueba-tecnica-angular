@@ -9,6 +9,8 @@ import { ProductoComponent } from './producto/producto.component';
 import { ProductoService } from './producto/producto.service';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { RegisterUserComponent } from './register-user/register-user.component';
+import { LoginUserComponent } from './login-user/login-user.component';
 
 const routes: Routes = [
   {path:"", redirectTo:"/productos", pathMatch:"full"},
@@ -22,7 +24,9 @@ const routes: Routes = [
     HeaderComponent,
     FooterComponent,
     RegistroComponent,
-    ProductoComponent
+    ProductoComponent,
+    RegisterUserComponent,
+    LoginUserComponent
   ],
   imports: [
     BrowserModule,

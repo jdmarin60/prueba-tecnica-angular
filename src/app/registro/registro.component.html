@@ -11,57 +11,65 @@
         <div class="modal-body">
           <form>
             <div class="form-group row">
-              <label for="inputName" class="col-sm-2 col-form-label">Nombre</label>
-              <div class="col-sm-10">
+              <label for="inputName" class="col-sm-4 col-form-label">Nombre</label>
+              <div class="col-sm-8">
                 <input type="text" class="form-control" id="inputName">
               </div>
             </div>
 
             <div class="form-group row">
-              <label for="inputFeatures" class="col-sm-2 col-form-label">Caracteristicas</label>
-              <div class="col-sm-10">
+              <label for="inputFeatures" class="col-sm-4 col-form-label">Caracteristicas</label>
+              <div class="col-sm-8">
                 <input type="text" class="form-control" id="inputFeatures">
               </div>
             </div>
 
             <div class="form-group row">
-              <label for="inputDate" class="col-sm-2 col-form-label">Fecha Lanzamiento</label>
-              <div class="col-sm-10">
+              <label for="inputDate" class="col-sm-4 col-form-label">Fecha Lanzamiento</label>
+              <div class="col-sm-8">
                 <input type="date" class="form-control" id="inputDate">
               </div>
             </div>
 
             <div class="form-group row">
-              <label for="inputEmail" class="col-sm-2 col-form-label">Correo Fabricante</label>
-              <div class="col-sm-10">
-                <input type="email" class="form-control" id="inputEmail">
+              <label for="inputEmailFabricante" class="col-sm-4 col-form-label">Correo Fabricante</label>
+              <div class="col-sm-8">
+                <input type="email" class="form-control" id="inputEmailFabricante">
               </div>
             </div>
 
             <div class="form-group row">
-              <label for="inputCountry" class="col-sm-2 col-form-label">Pais de Fabricación</label>
-              <div class="col-sm-10">
-                <input type="text" class="form-control" id="inputCountry">
+              <label for="inputCountry" class="col-sm-4 col-form-label">Pais de Fabricación</label>
+              <div class="col-sm-8">
+                <select name="countries" id="inputCountry" class="form-control">
+                  <option value="colombia">Colombia</option>
+                  <option value="canada">Canadá</option>
+                  <option value="mexico">Medellín</option>
+                  <option value="austria">Austria</option>
+                </select>
+                <!-- <select [(ngModel)]="inputCountry" name="countries" id="" class="form-control">
+                  <option *ngFor="let district of districts" [value]="inputCountry">{{district.name}}</option>
+                </select> -->
               </div>
             </div>
 
             <div class="form-group row">
-              <label for="inputPrice" class="col-sm-2 col-form-label">Precio</label>
-              <div class="col-sm-10">
+              <label for="inputPrice" class="col-sm-4 col-form-label">Precio</label>
+              <div class="col-sm-8">
                 <input type="number" class="form-control" id="inputPrice">
               </div>
             </div>
 
             <div class="form-group row">
-              <label for="inputAvailable" class="col-sm-2 col-form-label">Disponibles</label>
-              <div class="col-sm-10">
+              <label for="inputAvailable" class="col-sm-4 col-form-label">Disponibles</label>
+              <div class="col-sm-8">
                 <input type="number" class="form-control" id="inputAvailable">
               </div>
             </div>
 
             <div class="form-group row">
-              <label for="inputImage" class="col-sm-2 col-form-label">Imagen</label>
-              <div class="col-sm-10">
+              <label for="inputImage" class="col-sm-4 col-form-label">Imagen</label>
+              <div class="col-sm-8">
                 <input type="file" class="form-control" id="inputImage">
               </div>
             </div>

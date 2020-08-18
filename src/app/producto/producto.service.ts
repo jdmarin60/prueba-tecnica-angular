@@ -8,7 +8,10 @@ import { map } from 'rxjs/operators';
 export class ProductoService {
 
   private urlEndpoint: string = 'http://localhost:8080/api/productos';
+  private urlSelectCountries: string = 'https://restcountries.eu/rest/v2/alpha/col';
   private http: HttpClient; 
+
+  countries: any[] = []; 
 
   constructor(http: HttpClient) {
     this.http = http;

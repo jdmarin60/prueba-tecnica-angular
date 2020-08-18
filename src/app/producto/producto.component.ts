@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Producto } from './producto';
 import { ProductoService } from './producto.service';
+import { PRODUCTOS } from './productos.json'; 
 
 
 @Component({
@@ -19,9 +20,10 @@ export class ProductoComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.productoService.getProductos().subscribe(
-      productos => this.productos = productos
-    );
+    this.productos = PRODUCTOS;
+    /* this.productoService.getProductos().subscribe(
+      productos => this.productos = productos 
+    ); */
   }
 
 }

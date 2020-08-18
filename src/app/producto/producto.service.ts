@@ -14,9 +14,9 @@ export class ProductoService {
     this.http = http;
   }
 
-  getProductos (): Observable <Producto[]> {
+  /* getProductos (): Observable <Producto[]> {
     return this.http.get<Producto[]>(this.urlEndpoint).pipe(
       map(response => response as Producto[])
-    );
-  }
+    ); 
+  } */
 }
